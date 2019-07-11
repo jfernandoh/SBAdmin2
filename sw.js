@@ -9,22 +9,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 console.log("11111");
 const APP_SHELL = [
     // '/',
-    'index.html',
-    '404.html',
-    'blank.html',
-    'buttons.html',
-    'cards.html',
-    'charts.html',
-    'forgot-password.html',
-    'login.html',
-    'register.html',
-    'tables.html',
-    'utilities-animation.html',
-    'utilities-border.html',
-    'utilities-color.html',
-    'utilities-other.html',
-    'js/sw-utils.js',
-    'js/app.js'
+    'index.html'
 ];
 
 const APP_SHELL_INMUTABLE = [
