@@ -6,6 +6,7 @@ const STATIC_CACHE = 'static-v1';
 const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
+console.log("11111");
 const APP_SHELL = [
     // '/',
     'index.html',
@@ -15,7 +16,6 @@ const APP_SHELL = [
     'cards.html',
     'charts.html',
     'forgot-password.html',
-    'gulpfile.js',
     'login.html',
     'register.html',
     'tables.html',
