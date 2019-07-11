@@ -13,22 +13,31 @@ const APP_SHELL = [
 ];
 
 const APP_SHELL_INMUTABLE = [
-     
+    'vendor/fontawesome-free/css/all.min.css',
+    'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+    'css/sb-admin-2.min.css',
+    'vendor/jquery/jquery.min.js',
+    'vendor/bootstrap/js/bootstrap.bundle.min.js',
+    'vendor/jquery-easing/jquery.easing.min.js',
+    'js/sb-admin-2.min.js',
+    'vendor/chart.js/Chart.min.js',
+    'js/demo/chart-area-demo.js',
+    'js/demo/chart-pie-demo.js'
 ];
 
 self.addEventListener('install', e => {
 
-    const cacheStatic = caches.open( STATIC_CACHE )
-        .then( cache => {
-            return cache.addAll( APP_SHELL );
-        });
+    // const cacheStatic = caches.open( STATIC_CACHE )
+    //     .then( cache => {
+    //         return cache.addAll( APP_SHELL );
+    //     });
     
-    const cacheInmutable = caches.open( INMUTABLE_CACHE )
-        .then( cache => {
-            return cache.addAll( APP_SHELL_INMUTABLE );
-        });
+    // const cacheInmutable = caches.open( INMUTABLE_CACHE )
+    //     .then( cache => {
+    //         return cache.addAll( APP_SHELL_INMUTABLE );
+    //     });
 
-    e.waitUntil( Promise.all([ cacheStatic, cacheInmutable ]) );
+    // e.waitUntil( Promise.all([ cacheStatic, cacheInmutable ]) );
 });
 
 self.addEventListener('activate', e => {
